@@ -1,16 +1,33 @@
 .main-container{
-  display: flex;
-  flex-direction: row;
+ display: grid;
+ justify-content: center;
+ align-content: center;
+
+ gap: 2px;
+ grid-template-columns: 20% auto 20%;
 }
 
 .configs {
-  width: 20%;
+  display:flex;
+  flex-direction: column;
   align-items: center;
-  background-color: aqua;
+  justify-content: center;
+  margin-right: 100px;
+  height: 90vh;
+}
+
+.grid{
+  display:grid;
+  align-items: center;
+  height: 80vh;
 }
 
 .rules {
-  margin-left: 10%;
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  height: 90vh;
 }
 
 h1 {
