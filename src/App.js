@@ -33,7 +33,7 @@ const App = () => {
           runningRef={runningRef}
         />
         <div className="grid">
-          <Grid size={size} grid={grid} setGrid={setGrid} setRunning={setRunning}/>
+          <Grid size={size} grid={grid} setGrid={setGrid} running={running}/>
         </div>
         <div className="rules">Rules</div>
       </div>

@@ -20,7 +20,7 @@ const ConfigComponent = ({
       setGeneration(0);
       return;
     }
-    setGeneration(generation+1)
+    setGeneration((g) => g+1);
     setGrid(g => {
       return produce(g, gridCopy => {
         for (let i = 0; i < size; i++) {

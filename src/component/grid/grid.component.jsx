@@ -2,8 +2,11 @@ import React from "react";
 import { GridContainer, Cell } from "./grid.styles";
 import produce from "immer";
 
-const Grid = ({ size, grid, setGrid, setRunning }) => {
+const Grid = ({ size, grid, setGrid, running }) => {
   const colorCell = (i, j) => {
+    if (running) {
+      return;
+    }
     setGrid(
       produce((grid) => {
         grid[i][j] = grid[i][j] ? 0 : 1;
@@ -22,7 +25,6 @@ const Grid = ({ size, grid, setGrid, setRunning }) => {
             key={`${i}-${j}`}
             onClick={() => {
               colorCell(i, j);
-              setRunning(false);
             }}
             color={grid[i][j] ? "black" : undefined}
           />
