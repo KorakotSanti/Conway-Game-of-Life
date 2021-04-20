@@ -1,9 +1,10 @@
 import React from "react";
 
-const SizeInput = ({ setSize, setGrid, size }) => {
+const SizeInput = ({ setSize, setGrid, size, setRunning }) => {
 
   const changeSize = (e) => {
     let temp = 0;
+    setRunning(false);
     if (e.target.value === "") {
       temp = 0;
     } 
