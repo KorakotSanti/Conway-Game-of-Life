@@ -4,6 +4,7 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(${props=>props.size}, 18px);
   grid-template-rows: repeat(${props=>props.size}, 18px);
+  border: solid black 1px;
 `
 
 export const Cell = styled.div`

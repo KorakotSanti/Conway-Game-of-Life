@@ -14,14 +14,6 @@
   height: 80vh;
 }
 
-.rules {
-  display:grid;
-  align-items: center;
-  justify-content: center;
-  margin-left: 100px;
-  height: 90vh;
-}
-
 h1 {
   text-align: center;
 }

@@ -1,5 +1,8 @@
 import React from "react";
 
+import {InputContainer, Label, TextInput } from './size-input.styles';
+
+
 const SizeInput = ({ setSize, setGrid, size, setRunning }) => {
 
   const changeSize = (e) => {
@@ -31,10 +34,10 @@ const SizeInput = ({ setSize, setGrid, size, setRunning }) => {
   };
 
   return (
-    <div className="input-contain">
-      <label>Set size (0-50): </label>
-      <input type="text" value={size} onChange={changeSize} />
-    </div>
+    <InputContainer>
+      <Label>Set Size (0-50): </Label>
+      <TextInput type="text" value={size} onChange={changeSize}/>
+    </InputContainer>
   );
 };
 

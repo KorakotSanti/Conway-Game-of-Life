@@ -1,4 +1,6 @@
 import React, { useState, useRef } from "react";
+
+import GameRule from './component/game-rule/game-rule.component';
 import Grid from "./component/grid/grid.component";
 import ConfigComponent from "./component/config-component/config-component.component";
 
@@ -35,7 +37,7 @@ const App = () => {
         <div className="grid">
           <Grid size={size} grid={grid} setGrid={setGrid} running={running}/>
         </div>
-        <div className="rules">Rules</div>
+        <GameRule/>
       </div>
     </React.Fragment>
   );
