@@ -1,4 +1,4 @@
-# [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+# [Conway's Game of Life](https://korakotsanti.github.io/Conway-Game-of-Life/)
 
 This is my implementation of Conway's Game of Life using ReactJs</br>
 You can find the app at https://korakotsanti.github.io/Conway-Game-of-Life/
