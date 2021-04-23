@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my implementation of Conway's Game of Life using ReactJs</br>
+You can find the app at https://korakotsanti.github.io/Conway-Game-of-Life/
 
-## Available Scripts
+## What is Conway's Game of Life?
+> The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. </br>
+> [Source](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
-In the project directory, you can run:
+</br>
+The Game of Life  consists of a grid each cell in the grid can have up to 8 neighbors. The cell in the grid are either alive or dead.
+The Game of Life will keep cycling on and on through generations with a ruleset that will turn the live cells into dead cells and dead cells into live cells.
+</br
+The rules are as followed:
+- Live cell with less than 2 neighbors or more than 3 neighbors will become a dead cell
+- Dead cells with exactly 3 neighbors will become a live cell
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features
+There are some features for this app. they are:
+- **Start**: allows you to start the game and see the magic, and the button will turn into a **Stop** button
+- **Stop**: will stop the running game, when press will turn into a **Start** button
+- **Interval Dropdown**: There are options to see the change in milliseconds
+- **Clear**: Will clear the grid
+- **Randomize**: Will do random live and dead cell for the entire grid
+- **Set Size**: Allows you to set the size of the board nxn from 20 to 50
+- **Color in Cell**: You are allowed to click the cell to make a live cell into a dead cell and vice versa
